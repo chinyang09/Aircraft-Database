@@ -40,10 +40,8 @@ for await (const line of rl) {
   const slim = {
     icao24: r.icao?.toUpperCase(),
     reg: r.reg ? r.reg.toUpperCase() : null,
-    type:
-      r.short_type || r.icaotype
-        ? (r.short_type || r.icaotype).toUpperCase()
-        : null,
+    icaotype: r.icaotype ? r.icaotype.toUpperCase() : null,
+    short_type: r.short_type ? r.short_type : null,
   };
 
   if (!slim.icao24) continue;
@@ -69,7 +67,8 @@ const metadata = {
   schema: {
     icao24: "ICAO 24-bit hex address (uppercase)",
     reg: "Aircraft registration (uppercase or null)",
-    type: "ICAO aircraft type designator (uppercase or null)",
+    icaotype: "ICAO aircraft type designator (uppercase or null)",
+    type: "A 3 character code that identifies basic properties of the aircraft as per ICAO Doc 8643",
   },
   file: "aircraft-slim.json.gz",
   sha256: hash.digest("hex"),
@@ -80,3 +79,4 @@ fs.writeFileSync(META_FILE, JSON.stringify(metadata, null, 2));
 console.log(`✅ Done`);
 console.log(`📦 Records: ${recordCount}`);
 console.log(`📁 Output: ${OUTPUT_FILE}`);
+"
