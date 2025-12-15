@@ -1,0 +1,21 @@
+{
+    "version": "2025-12",
+    "source": "adsbexchange/basic-ac-db",
+    "description": "Aircraft reference list: ICAO24, registration, type, manufacturer, model, year, etc.",
+    "url": "basic-ac-db.json.gz",
+    "recordCount": 428731,
+    "fields": {
+      "icao": "ICAO 24-bit hex address (lowercase)",
+      "reg": "Registration (string or null)",
+      "icaotype": "ICAO type designator (string or null)",
+      "short_type": "Short type (string or null)",
+      "manufacturer": "Manufacturer name",
+      "model": "Aircraft model",
+      "year": "Year of manufacture (number or null)",
+      "ownop": "Owner/operator",
+      "mil": "Military flag (boolean)",
+      "faa_pia": "FAA PIA flag",
+      "faa_ladd": "FAA LADD privacy flag"
+    },
+    "generatedAt": "2025-12-16T18:00:00Z"
+  }
