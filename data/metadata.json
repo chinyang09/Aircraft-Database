@@ -1,0 +1,15 @@
+{
+  "dataset": "Aircraft Database (Slim)",
+  "version": "2025-12",
+  "generatedAt": "2025-12-15T18:20:49.592Z",
+  "source": "ADS-B Exchange basic-ac-db",
+  "format": "NDJSON + gzip",
+  "records": 615656,
+  "schema": {
+    "icao24": "ICAO 24-bit hex address (uppercase)",
+    "reg": "Aircraft registration (uppercase or null)",
+    "type": "ICAO aircraft type designator (uppercase or null)"
+  },
+  "file": "aircraft-slim.json.gz",
+  "sha256": "43530ffd2d1c1a0fd38e7c46557382fb8ee625c4c30e0e8f5c31dfab96900d3d"
+}
