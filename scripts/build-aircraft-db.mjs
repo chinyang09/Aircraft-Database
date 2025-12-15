@@ -79,4 +79,3 @@ fs.writeFileSync(META_FILE, JSON.stringify(metadata, null, 2));
 console.log(`✅ Done`);
 console.log(`📦 Records: ${recordCount}`);
 console.log(`📁 Output: ${OUTPUT_FILE}`);
-"
