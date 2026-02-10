@@ -1,7 +1,7 @@
 {
   "dataset": "Aircraft Database (Slim)",
-  "version": "2026-01",
-  "generatedAt": "2026-01-24T18:37:16.736Z",
+  "version": "2026-02",
+  "generatedAt": "2026-02-10T23:09:59.811Z",
   "source": "ADS-B Exchange basic-ac-db",
   "format": "NDJSON + gzip",
   "records": 615656,
